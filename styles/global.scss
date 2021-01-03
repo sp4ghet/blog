@@ -1,0 +1,218 @@
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+@import "../node_modules/bulma/sass/utilities/functions";
+
+@font-face {
+  font-family: koz;
+  font-style: normal;
+  font-weight: 600;
+  src: url(../public/fonts/koz-l.otf);
+}
+
+$cosine-gradient: radial-gradient(
+  circle at left top,
+  rgb(66, 255, 163),
+  rgb(70, 255, 178),
+  rgb(106, 255, 186),
+  rgb(164, 255, 187),
+  rgb(230, 217, 180),
+  rgb(255, 105, 167),
+  rgb(255, 56, 147),
+  rgb(255, 90, 124),
+  rgb(255, 194, 98),
+  rgb(220, 255, 71),
+  rgb(154, 255, 47)
+);
+
+$hover-color: rgba(0, 0, 0, 0.5);
+
+$family-san-serif: "koz", "Helvetica", "Roboto", "Ubuntu", san-serif;
+
+$text: #eee;
+$text-strong: #eaeaea;
+$text-light: #efefef;
+
+// $background: $cosine-gradient;
+$link: rgb(106, 255, 186);
+$danger: $red;
+$family-primary: $family-san-serif;
+
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
+
+@import "../node_modules/bulma/sass/utilities/derived-variables.sass";
+$addColors: (
+  "twitter": (
+    $twitter,
+    $twitter-invert,
+  ),
+  "linkedin": (
+    $linkedin,
+    $linkedin-invert,
+  ),
+  "github": (
+    $github,
+    $github-invert,
+  ),
+);
+$colors: map-merge($colors, $addColors);
+
+$navbar-height: 12rem;
+$navbar-item-img-max-height: 128px;
+$navbar-item-color: $black;
+$navbar-item-backround-color: transparent;
+$navbar-item-hover-background-color: $hover-color;
+$navbar-item-hover-color: $text;
+$navbar-dropdown-background-color: transparent;
+
+$footer-background-color: $white;
+
+$card-background-color: transparent;
+$card-header-shadow: 0 1px 2px rgba($white, 0.1);
+$card-shadow: 0 2px 3px rgba($white, 0.1), 0 0 0 1px rgba($white, 0.1);
+$card-footer-border-top: 1px solid rgba($white, 0.1);
+
+$code-background: rgba(255, 255, 255, 0.96);
+
+@import "../node_modules/bulma/bulma";
+
+html,
+body,
+#__next,
+#container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 1.25rem;
+  background-color: transparent;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+#container {
+  overflow-y: scroll;
+}
+
+.navbar-menu {
+  background-color: transparent;
+}
+
+.navbar-burger {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.navbar-burger:hover {
+  background-color: $hover-color;
+}
+
+.work p {
+  width: 100%;
+  background-color: #222;
+  color: #ddd;
+}
+
+.work:hover figure div {
+  opacity: 1;
+}
+
+.work:hover figure {
+  background-color: $white;
+  color: $white;
+}
+.work img {
+  opacity: 0.75;
+}
+
+.work:hover img {
+  opacity: 1;
+}
+
+.tab {
+  opacity: 0.75;
+  font-size: 1rem;
+}
+
+.tab:hover {
+  opacity: 1;
+}
+
+#navbar-logo {
+  @include touch {
+    max-width: 60%;
+  }
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 54%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.project-picture {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.article-container {
+  background-color: $hover-color;
+  position: relative;
+  padding-bottom: 2.5rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.line {
+  display: inline-block;
+}
+
+.instagram-media {
+  background: #fff;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+  margin: 1px;
+  max-width: 540px;
+  min-width: 326px;
+  padding: 0;
+  width: 99.375%;
+  width: -webkit-calc(100% - 2px);
+  width: calc(100% - 2px);
+}
+
+.insta-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 540px;
+  min-width: 326px;
+}
+
+.content blockquote,
+.content pre {
+  color: #676767;
+}
+
+.content table tr:hover {
+  background-color: inherit;
+}
+
+.work-content img {
+  margin: auto;
+  width: 100%;
+}
