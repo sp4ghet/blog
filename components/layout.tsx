@@ -26,42 +26,6 @@ export const Tab = function ({ name, jpText, enText, imgUrl }) {
   );
 };
 
-function doVeda(a) {
-  if (typeof window !== "undefined") {
-    console.log(typeof window);
-    const veda = new Veda();
-
-    const canvas: HTMLCanvasElement = document.querySelector(
-      "canvas.background"
-    );
-
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    veda.setCanvas(canvas);
-
-    const vedaInit = () => {
-      const code = client.responseText;
-
-      veda.loadFragmentShader(code);
-      veda.play();
-    };
-
-    const client = new XMLHttpRequest();
-
-    client.open("GET", "/shaders/curl.frag");
-    client.onload = vedaInit;
-
-    client.send();
-
-    const vedaResize = () => {
-      veda.resize(window.innerWidth, window.innerHeight);
-    };
-
-    window.addEventListener("resize", vedaResize, true);
-  }
-}
-
 export default function Layout({ children }) {
   return (
     <div id="container">
@@ -76,7 +40,7 @@ export default function Layout({ children }) {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
           integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
 
         <script async src="//www.instagram.com/embed.js"></script>

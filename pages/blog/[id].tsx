@@ -5,7 +5,17 @@ import Head from "next/head";
 import Date from "../../components/date";
 import styles from "../../styles/util.module.scss";
 
-export default class BlogPost extends React.Component {
+declare global {
+  interface Window {
+    instgrm?: any;
+  }
+}
+
+interface Props {
+  postData: any;
+}
+
+export default class BlogPost extends React.Component<Props> {
   componentDidMount() {
     if (
       typeof window !== "undefined" &&

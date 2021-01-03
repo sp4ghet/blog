@@ -2,6 +2,12 @@ import { throttle } from "lodash";
 import React from "react";
 import frag from "../pages/curl.frag";
 
+declare global {
+  interface Window {
+    veda?: any;
+  }
+}
+
 const getVeda = () => {
   if (typeof window === "undefined" || typeof document === "undefined") {
     return null;
