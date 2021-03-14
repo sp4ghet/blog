@@ -3,6 +3,12 @@ title: "Discrete Differential Geometry 1"
 date: "2021-02-09"
 ---
 
+Preface:
+
+Going through the [Carnegie Mellon University CS 15-458/858](https://brickisland.net/DDGSpring2021/) course "Discrete Differential Geometry" for fun with some friends.
+
+Youtube playlist is [here](https://www.youtube.com/playlist?list=PL9_jI1bdZmz0hIrNCMQW1YmZysAiIYSSS)
+
 # Discrete Differential Geometry Week 1
 
 

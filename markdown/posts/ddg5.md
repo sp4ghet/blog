@@ -3,7 +3,6 @@ title: "Discrete Differential Geometry 5"
 date: "2021-03-13"
 ---
 
-
 # DDG Lecture 5
 
 ## Differential Forms in $\mathbb{R}^n$
