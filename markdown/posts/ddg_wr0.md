@@ -70,3 +70,23 @@ A1 = [
   [0,0,1,1,0,0,0,1]
 ]
 ```
+
+
+## Coding
+
+Code is somewhere, I haven't decided where to put it.
+The screenshots below should verify that the c++ code is working to solve the exercises.
+
+All tests green:
+![11 tests passed](/img/blog/ddg_test.png)
+
+Star
+![star](/img/blog/ddg_star.png)
+
+
+Link
+![Link](/img/blog/ddg_link.png)
+
+
+Closure
+![closure](/img/blog/ddg_closure.png)
