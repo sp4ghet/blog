@@ -4,33 +4,17 @@ title: "About Me"
 
 ---
 
-Philomath Craftsman; Ideally a polymath but not quite there yet.
-
-Pursuing aesthetic tooling and aesthetic work.
-
-My theme is aesthetics and tools.
-
----
-
-## Skills
-
-- Computer Graphics // xR // Functional Programming // Aquaponics // Controlled Environment Agriculture // Web (Front|Back)end // Optimization // DevOps // SysML // Data Engineer
-
-## Interests
-
-- Aesthetics // Tools // Complex Systems // Compilers // Language (synthetic|natural) // Math // Visuals // Graphic Design // Electronics
-
----
-
 ## Education
 
-- [09/2018 ~ Current] University College London
+- [09/2018 ~ Current] University College London (BSc)
 - [04/2013 ~ 03/2016] Tokyo Metropolitan Kokusai High School
 
 ---
 
 ## Career Summary
 
+- [06/2021 ~ 10/2021] UCL Geography/Alan Turing Institute // Research Staff
+- [05/2020 ~ 09/2020] Kyoto University // Research Intern
 - [04/2018 ~ 05/2019] Mercari Inc. // Machine Learning Team // Software Engineer
 - [01/2018 ~ 09/2018] Japan Plant Factory Association // Researcher
 - [08/2017 ~ 08/2017] Mercari Inc. // Machine Learning Team // Summer Internship
@@ -55,22 +39,33 @@ My theme is aesthetics and tools.
 
 ## Publications
 
-- Data Warehouse for Plant Phenotyping in Plant Factories // Japanese Society of Agricultural Biological and Environmental Engineers and Scientists // **Rikuo Hasegawa**
-- GODEL [poster](/assets/img/projects/GODEL/spring-2017-poster.pdf) // MIT Media Lab Members' Week // **Rikuo Hasegawa**
-- Aquaponics ([EN](/assets/pdf/2014.pdf)/[JP](/assets/pdf/2015.pdf)) // Kokusai High School Individual Research Project // **Rikuo Hasegawa**
-- [Cancel detection of transactions based on chat messages](http://tech.mercari.com/entry/2017/09/21/170000) // Mercari Tech Blog // **Rikuo Hasegawa**
+- Data Warehouse for Plant Phenotyping in Plant Factories // 2018 Japanese Society of Agricultural Biological and Environmental Engineers and Scientists // **Rikuo Hasegawa**
 - 世界における人工光型植物工場の研究開発－課題と展望－ // アグリバイオ 2018 年 6 月号 // 古在 豊樹, 魯 娜, **長谷川 陸央**, 雨谷 弓弥子, 布村 伊, 野崎 友美, Yu Zhang, 林 絵理
+- [Plant Cohort Research and Its Application](https://www.springer.com/jp/book/9789811310645) // Chapter 26 from Smart Plant Factory (2018) // Toyoki Kozai, Na Lu, **Rikuo Hasegawa**, Osamu Nunomura, Tomomi Nozaki, Yumiko Amagai, and Eri Hayashi
+
 
 ---
 
 ## Articles
 
 - だれでも分かる多目的最適化問題超入門 [qiita](https://qiita.com/sp4ghet/items/f3dfbfe24b0a9c4997ee)
-
+- GODEL [poster](/assets/img/projects/GODEL/spring-2017-poster.pdf) // MIT Media Lab Members' Week // **Rikuo Hasegawa**
+- Aquaponics ([EN](/assets/pdf/2014.pdf)/[JP](/assets/pdf/2015.pdf)) // Kokusai High School Individual Research Project // **Rikuo Hasegawa**
+- [Cancel detection of transactions based on chat messages](http://tech.mercari.com/entry/2017/09/21/170000) // Mercari Tech Blog // **Rikuo Hasegawa**
 ---
 
 ## Shows
 
+- 07/2021 CAVE07 (2 sets) // VRChat
+- 07/2021 \[REDACTED\] // Internet
+- 06/2021 GHOSTCLUB TEXTURETYPE:CONCRETE2 (3 sets) // VRChat
+- 05/2021 CAVE05 // VRChat
+- 04/2021 Midnight Snacks 15 year anniversary: EVERYONE 15 CONNECTED // VRChat
+- 04/2021 Cave x Zenith Collab // VRChat
+- 01/2021 GHOSTCLUB TEXTURETYPE:CONCRETE (2 sets) // VRChat
+- 12/2020 Tidal Club Winter Solstice // Internet
+- 08/2020 Tidal Club New Moon Marathon // Internet
+- 01/2020 Synergy // London, UK
 - 05/2019 AlgoMesh @ AlgoMech // Sheffield, UK // Visuals
 - 09/2018 InfiniteRave #1 // Tokyo, Japan // Visuals for DJ Gaku
 
@@ -78,9 +73,8 @@ My theme is aesthetics and tools.
 
 ## Talks, Exhibits, and Interviews
 
-- 09/2018 [conference talk] Data Warehouse for Plant Phenotyping in Plant Factories // JSABEES 2018
-- 01/2016 [talk] _U18 僕らの未来 ～伊藤穰一と中高生の白熱トークライブ～_ // NHK (TV)
-- 01/2016 [interview] _現役学生プログラマーが力を入れる、循環型のエコシステム"アクアポニックス"_ // sensors.jp
+- 01/2016 [TV] _U18 僕らの未来 ～伊藤穰一と中高生の白熱トークライブ～_ // NHK
+- 01/2016 [Article] _現役学生プログラマーが力を入れる、循環型のエコシステム"アクアポニックス"_ // sensors.jp
   - http://www.sensors.jp/post/demoday_7.html
 - 12/2015 [talk] _ボクとレタスの話_ // DemoDay.Tokyo#0
 - 05/2015 [interview] _【西川善司】視線追跡機能付き VR HMD から AI 搭載ミニ四駆まで。独創的な技術を持つベンチャー企業が集まる「Slush Asia」を見てきた_ // 4gamer.net

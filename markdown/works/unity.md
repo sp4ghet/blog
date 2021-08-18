@@ -1,5 +1,5 @@
 ---
-title: "Unity"
+title: "Unity GPGPU"
 icon: "/img/projects/Unity/square.jpg"
 ---
 
