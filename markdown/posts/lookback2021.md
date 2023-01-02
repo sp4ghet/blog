@@ -24,7 +24,7 @@ VJ を（当社比）たくさんしました。
 - Hexarius ([KAH](https://youtu.be/XoaIbAjqLLc), Kagaly)
 
 デモシーンのライブコーディング的なものも去年の大晦日に初めてやりましたが今年も続けました。
-[livecode.demozoo.org](https://livecode.demozoo.org/performers/119897.html) にアーカイブされるようにもなりました。
+[livecode.demozoo.org](https://livecode.demozoo.org/performer/sp4ghet.html) にアーカイブされるようにもなりました。
 
 VJ をするためのツールを slerpy と作ったりもしました。
 [https://github.com/slerpyyy/sh4der-jockey](https://github.com/slerpyyy/sh4der-jockey)
