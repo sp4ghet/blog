@@ -10,8 +10,8 @@ export const siteTitle = "sp4ghet";
 
 export const Tab = function ({ name, jpText, enText, imgUrl }) {
   return (
-    <Link href={`/${name}`}>
-      <a className="navbar-item columns is-vcentered is-mobile is-marginless is-paddingless tab">
+    <Link href={`/${name}`} >
+      <div className="navbar-item columns is-vcentered is-mobile is-marginless is-paddingless tab">
         <div className="column is-7">
           <figure className="image is-128x128">
             <img src={imgUrl}></img>
@@ -21,7 +21,7 @@ export const Tab = function ({ name, jpText, enText, imgUrl }) {
           <h1>{enText}</h1>
           <h1>{jpText}</h1>
         </div>
-      </a>
+      </div>
     </Link>
   );
 };
@@ -50,11 +50,9 @@ export default function Layout({ children }) {
         <div className="navbar-brand">
           <div className="navbar-item" id="navbar-logo">
             <Link href="/">
-              <a>
                 <figure className="image">
                   <img src="/img/icons/title_black.svg" />
                 </figure>
-              </a>
             </Link>
           </div>
         </div>

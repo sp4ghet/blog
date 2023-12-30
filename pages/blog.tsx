@@ -17,7 +17,7 @@ export default function Blog({ allPostsData }) {
           {allPostsData.map(({ id, date, title }) => (
             <li key={id}>
               <Link href={`/blog/${id}`}>
-                <a>{title}</a>
+                {title}
               </Link>
               <br />
               <small>
