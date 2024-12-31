@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 400 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<svg width="100%" height="100%" viewBox="0 0 400 128" version="1.1"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xml:space="preserve" xmlns:serif="http://www.serif.com/"
+    style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g id="logo_vector.svg" transform="matrix(0.0999511,0,0,0.0999511,63.9993,63.4675)">
         <g transform="matrix(1,0,0,1,-640,-640)">
             <g>
@@ -10,6 +13,6 @@
         </g>
     </g>
     <g transform="matrix(1,0,0,1,-6.79117,-1.69779)">
-        <text x="136.714px" y="90.308px" style="font-family:'FranklinGothic-Book', 'Franklin Gothic Book', sans-serif;font-size:72px;">sp4ghe<tspan x="362.171px " y="90.308px ">t</tspan></text>
+        <text x="136.714px" y="90.308px" style="font-family:'FranklinGothic-Book', 'Franklin Gothic Book', 'Helvetica', sans-serif;font-size:72px;">sp4ghet</text>
     </g>
 </svg>
