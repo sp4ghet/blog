@@ -60,7 +60,7 @@ $addColors: (
 );
 $colors: map-merge($colors, $addColors);
 
-$navbar-height: 12rem;
+$navbar-height: 8rem;
 $navbar-item-img-max-height: 128px;
 $navbar-item-color: $black;
 $navbar-item-backround-color: transparent;
@@ -90,12 +90,36 @@ body,
   background-color: transparent;
 }
 
-.navbar {
-  background-color: transparent;
-}
 
 #container {
   overflow-y: scroll;
+}
+
+.navbar {
+  background-color: transparent;
+
+}
+
+#navbar-logo {
+  height: 128px;
+  display: flex;
+  align-items: center;
+  
+  .image {
+    height: 128px;
+    width: auto;
+    
+    img {
+      height: 100%;
+      width: auto;
+      max-height: 128px;
+      object-fit: contain;
+    }
+  }
+  
+  @include touch {
+    max-width: 60%;
+  }
 }
 
 .navbar-menu {
@@ -140,11 +164,7 @@ body,
   opacity: 1;
 }
 
-#navbar-logo {
-  @include touch {
-    max-width: 60%;
-  }
-}
+
 
 .video-container {
   position: relative;

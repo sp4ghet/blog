@@ -44,13 +44,14 @@ export default function Layout({ children }) {
         />
 
         <script async src="//www.instagram.com/embed.js"></script>
+        <script async src="https://platform.twitter.com/widgets.js"></script>
       </Head>
       <Shader />
       <nav className="navbar">
         <div className="navbar-brand">
           <div className="navbar-item" id="navbar-logo">
             <Link href="/">
-                <figure className="image">
+                <figure className="image is-128x128">
                   <img src="/img/icons/title_black.svg" />
                 </figure>
             </Link>

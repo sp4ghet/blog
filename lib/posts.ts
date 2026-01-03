@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import vfile from "vfile";
-import unified from "unified";
+import {VFile} from "vfile";
+import {unified} from "unified";
 import markdown from "remark-parse";
 import math from "remark-math";
 import remark2rehype from "remark-rehype";
@@ -80,7 +80,7 @@ export async function getPostData(id, postsDir) {
     .use(raw)
     .use(katex)
     .use(stringify)
-    .process(vfile(matterResult.content));
+    .process(new VFile(matterResult.content));
 
   const contentHtml = String(processedContent);
   // Combine the data with the id and contentHtml
