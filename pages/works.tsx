@@ -17,7 +17,7 @@ export default function Works({ allPostsData }) {
               className="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd has-text-centered work"
             >
               <Link href={`/works/${id}`}>
-                  <figure className="image is-square is-marginless">
+                  <figure className="image is-square m-0">
                     <img src={icon} alt="icon for project" />
                   </figure>
                   <p>{title}</p>

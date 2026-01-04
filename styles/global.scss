@@ -1,5 +1,28 @@
-@import "../node_modules/bulma/sass/utilities/initial-variables";
-@import "../node_modules/bulma/sass/utilities/functions";
+$family-san-serif: "koz", "Helvetica", "Roboto", "Ubuntu", san-serif;
+$text: #eee;
+$text-strong: #eaeaea;
+$text-light: #efefef;
+$white: #fff;
+$black: #000;
+$link: rgb(106, 255, 186);
+
+@use "bulma/sass" with (
+  $family-primary: $family-san-serif,
+  $primary: $text,
+  $grey-darker: $text-strong,
+  $grey-dark: $text-strong,
+  $grey-light: $text-light,
+  $link: $link,
+  $danger: #ff0000,
+  $input-shadow: none,
+  $column-gap: 0.75rem,
+  $content-heading-color: $text-strong,
+  $strong-color: $text-strong,
+  $navbar-item-color: $black,
+  $text-strong: $text-strong,
+);
+
+
 
 @font-face {
   font-family: koz;
@@ -24,41 +47,18 @@ $cosine-gradient: radial-gradient(
 );
 
 $hover-color: rgba(0, 0, 0, 0.5);
-
-$family-san-serif: "koz", "Helvetica", "Roboto", "Ubuntu", san-serif;
-
-$text: #eee;
-$text-strong: #eaeaea;
-$text-light: #efefef;
-
-// $background: $cosine-gradient;
-$link: rgb(106, 255, 186);
-$danger: $red;
-$family-primary: $family-san-serif;
-
 $linkedin: #0077b5;
-$linkedin-invert: findColorInvert($linkedin);
+$linkedin-invert: #fff;
 $twitter: #55acee;
-$twitter-invert: findColorInvert($twitter);
+$twitter-invert: #fff;
 $github: #333;
-$github-invert: findColorInvert($github);
+$github-invert: #fff;
 
-@import "../node_modules/bulma/sass/utilities/derived-variables.sass";
-$addColors: (
-  "twitter": (
-    $twitter,
-    $twitter-invert,
-  ),
-  "linkedin": (
-    $linkedin,
-    $linkedin-invert,
-  ),
-  "github": (
-    $github,
-    $github-invert,
-  ),
+$custom-colors: (
+  "twitter": $twitter,
+  "linkedin": $linkedin,
+  "github": $github,
 );
-$colors: map-merge($colors, $addColors);
 
 $navbar-height: 8rem;
 $navbar-item-img-max-height: 128px;
@@ -77,8 +77,6 @@ $card-footer-border-top: 1px solid rgba($white, 0.1);
 
 $code-background: rgba(255, 255, 255, 0.96);
 
-@import "../node_modules/bulma/bulma";
-
 html,
 body,
 #__next,
@@ -90,6 +88,19 @@ body,
   background-color: transparent;
 }
 
+a{
+  color: $link;
+}
+a:hover{
+    color: $hover-color;
+}
+
+.navbar-item {
+  h1{
+    color: black;
+  }
+}
+
 
 #container {
   overflow-y: scroll;
@@ -97,15 +108,12 @@ body,
 
 .navbar {
   background-color: transparent;
-
+  img{
+    max-height: 100%;
+  }
 }
 
-#navbar-logo {
-  height: 128px;
-  display: flex;
-  align-items: center;
-  
-  .image {
+.logo {
     height: 128px;
     width: auto;
     
@@ -115,9 +123,14 @@ body,
       max-height: 128px;
       object-fit: contain;
     }
-  }
+}
+
+#navbar-logo {
+  height: 128px;
+  display: flex;
+  align-items: center;
   
-  @include touch {
+  @media (max-width: 1280px){
     max-width: 60%;
   }
 }

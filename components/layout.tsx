@@ -1,8 +1,5 @@
-import Head from "next/head";
 import styles from "./layout.module.scss";
 import Link from "next/link";
-import Veda from "vedajs";
-import { ElementType } from "react";
 import Shader from "./veda";
 
 const name = "sp4ghet";
@@ -11,13 +8,13 @@ export const siteTitle = "sp4ghet";
 export const Tab = function ({ name, jpText, enText, imgUrl }) {
   return (
     <Link href={`/${name}`} >
-      <div className="navbar-item columns is-vcentered is-mobile is-marginless is-paddingless tab">
-        <div className="column is-7">
+      <div className="navbar-item columns is-vcentered is-mobile m-0 p-0 tab">
+        <div className="column is-7 ">
           <figure className="image is-128x128">
             <img src={imgUrl}></img>
           </figure>
         </div>
-        <div className="column is-vertical has-text-centered">
+        <div className="column is-vertical p-0 has-text-centered">
           <h1>{enText}</h1>
           <h1>{jpText}</h1>
         </div>
@@ -29,29 +26,12 @@ export const Tab = function ({ name, jpText, enText, imgUrl }) {
 export default function Layout({ children }) {
   return (
     <div id="container">
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="ようこそインターネット" />
-        <meta property="og:image" content="public/img/icons/icon.png" />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
-          integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X"
-          crossOrigin="anonymous"
-        />
-
-        <script async src="//www.instagram.com/embed.js"></script>
-        <script async src="https://platform.twitter.com/widgets.js"></script>
-      </Head>
       <Shader />
       <nav className="navbar">
         <div className="navbar-brand">
           <div className="navbar-item" id="navbar-logo">
             <Link href="/">
-                <figure className="image is-128x128">
+                <figure className="logo">
                   <img src="/img/icons/title_black.svg" />
                 </figure>
             </Link>

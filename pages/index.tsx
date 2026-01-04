@@ -17,7 +17,7 @@ export default function Home({ allPostsData }) {
           <div className="column is-narrow">
             <div className="columns is-centered is-mobile">
               <div className="column is-narrow">
-                <figure className="image">
+                <figure className="logo">
                   <img src="/img/icons/title_black.svg" />
                 </figure>
               </div>

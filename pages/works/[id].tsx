@@ -1,13 +1,13 @@
 import React from "react";
-import Layout from "../../components/layout";
+import Layout, {siteTitle} from "../../components/layout";
 import { getAllPostIds, getPostData, worksDir } from "../../lib/posts";
 import Head from "next/head";
-import Date from "../../components/date";
 import styles from "../../styles/util.module.scss";
 
 declare global {
   interface Window {
     instgrm?: any;
+    twttr?: any;
   }
 }
 
@@ -23,6 +23,12 @@ export default class Work extends React.Component<Props> {
     ) {
       window.instgrm.Embeds.process();
     }
+    if (
+      typeof window !== "undefined" &&
+      typeof window.twttr !== "undefined"
+    ) {
+      window.twttr?.widgets.load()
+    }
   }
 
   render() {
@@ -30,7 +36,9 @@ export default class Work extends React.Component<Props> {
     return (
       <Layout>
         <Head>
-          <title>{postData.title}</title>
+          <title>
+            {siteTitle} | {postData.title}
+          </title>
         </Head>
         <article className={`work-content content container ${styles.puff}`}>
           <h1>{postData.title}</h1>

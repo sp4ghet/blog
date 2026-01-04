@@ -1,13 +1,14 @@
-import React from "react";
-import Layout, { siteTitle } from "../../components/layout";
-import { getAllPostIds, getPostData, blogDir } from "../../lib/posts";
 import Head from "next/head";
+import React from "react";
 import Date from "../../components/date";
+import Layout, { siteTitle } from "../../components/layout";
+import { blogDir, getAllPostIds, getPostData } from "../../lib/posts";
 import styles from "../../styles/util.module.scss";
 
 declare global {
   interface Window {
     instgrm?: any;
+    twttr?: any;
   }
 }
 
@@ -16,12 +17,19 @@ interface Props {
 }
 
 export default class BlogPost extends React.Component<Props> {
+  
   componentDidMount() {
     if (
       typeof window !== "undefined" &&
       typeof window.instgrm !== "undefined"
     ) {
       window.instgrm.Embeds.process();
+    }
+    if (
+      typeof window !== "undefined" &&
+      typeof window.twttr !== "undefined"
+    ) {
+      window.twttr?.widgets.load()
     }
   }
 
