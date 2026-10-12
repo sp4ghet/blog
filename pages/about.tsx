@@ -13,7 +13,7 @@ export default function About({ postData }) {
 
       <article className={`content container ${styles.puff}`}>
         <h1>sp4ghet // Rikuo Hasegawa // 長谷川陸央</h1>
-        <img src="/img/icons/icon.png" alt="icon" />
+        <img src="/img/icons/icon-800.webp" alt="icon" width={400} height={400} />
 
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
